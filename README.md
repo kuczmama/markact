@@ -2,11 +2,11 @@
 Like react but smaller and less efficient
 
 ## Usage
-```
+```js
 m([node name], [attributes], ...children)
 ```
 
-``` 
+```js
 let element = m("div", {id: "myId"}, 
   m("div", {}, "Hello World!")
 );
@@ -20,6 +20,6 @@ It is possible to pass in a callback `onRender` to the element.  The `onRender` 
 
 ### Example
 
-```
+```js
 m('div', {onRender: (e) => alert(e)}, "Hello World");
 ```
